@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Wanderlust | Travel Photography</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="gallery.css">
+
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-container">
+
+      <h1 class="logo">Wanderlust<strong class="period">.</strong></h1>
+
+      <nav class="nav">
+        <a href="#home">Home</a>
+        <a href="#gallery">Gallery</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+
+      <div class="hero-content">
+        <p class="hero-label">EXPLORE THE WORLD</p>
+
+        <h2>Discover the beauty of our world</h2>
+
+        <p class="hero-description">
+          A collection of beautiful places, unforgettable moments,
+          and inspiring landscapes.
+        </p>
+
+        <a href="#gallery" class="hero-button">Explore Gallery</a>
+      </div>
+
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section" id="gallery">
+
+      <div class="section-heading">
+        <p class="section-label">THE COLLECTION</p>
+        <h2>Explore the Gallery</h2>
+        <p>Discover beautiful destinations through photography.</p>
+      </div>
+
+      <!-- Category Filters -->
+      <div class="filters" aria-label="Filter gallery photographs">
+
+        <button class="filter-button active" data-category="all">
+          All Photos
+        </button>
+
+        <button class="filter-button" data-category="nature">
+          Nature
+        </button>
+
+        <button class="filter-button" data-category="mountains">
+          Mountains
+        </button>
+
+        <button class="filter-button" data-category="oceans">
+          Oceans
+        </button>
+
+      </div>
+
+      <!-- Gallery Grid -->
+      <div class="gallery-grid">
+
+        <article class="gallery-card" data-category="mountains">
+          <button class="image-button" aria-label="View mountain landscape">
+            <img src="images/mountain.jpg" alt="Mountain peaks surrounding a beautiful landscape">
+          </button>
+          <div class="card-info">
+            <h3>Mountain Escape</h3>
+            <p>Mountains</p>
+          </div>
+        </article>
+
+        <article class="gallery-card" data-category="nature">
+          <button class="image-button" aria-label="View forest landscape">
+            <img src="images/forest.jpg" alt="A peaceful green forest">
+          </button>
+          <div class="card-info">
+            <h3>Into the Wild</h3>
+            <p>Nature</p>
+          </div>
+        </article>
+
+        <article class="gallery-card" data-category="nature">
+          <button class="image-button" aria-label="View lake landscape">
+            <img src="images/lake.jpg" alt="A calm lake surrounded by scenery">
+          </button>
+          <div class="card-info">
+            <h3>Still Waters</h3>
+            <p>Nature</p>
+          </div>
+        </article>
+
+        <article class="gallery-card" data-category="oceans">
+          <button class="image-button" aria-label="View ocean landscape">
+            <img src="images/ocean.jpg" alt="Ocean waves meeting the coastline">
+          </button>
+          <div class="card-info">
+            <h3>Ocean Breeze</h3>
+            <p>Oceans</p>
+          </div>
+        </article>
+
+        <article class="gallery-card" data-category="mountains">
+          <button class="image-button" aria-label="View mountain valley">
+            <img src="images/mountain2.jpg" alt="A scenic mountain valley">
+          </button>
+          <div class="card-info">
+            <h3>Beyond the Peaks</h3>
+            <p>Mountains</p>
+          </div>
+        </article>
+
+        <article class="gallery-card" data-category="nature">
+          <button class="image-button" aria-label="View desert landscape">
+            <img src="images/desert.jpg" alt="A wide desert landscape">
+          </button>
+          <div class="card-info">
+            <h3>Golden Horizons</h3>
+            <p>Nature</p>
+          </div>
+        </article>
+
+      </div>
+
+      <p class="no-results" hidden>No photographs found in this category.</p>
+
+    </section>
+
+  </main>
+
+  <!-- Lightbox -->
+  <div class="lightbox" aria-hidden="true" role="dialog" aria-label="Photograph viewer">
+
+    <button class="lightbox-close" aria-label="Close photograph viewer">
+      &times;
+    </button>
+
+    <button class="lightbox-prev" aria-label="Previous photograph">
+      &#10094;
+    </button>
+
+    <figure class="lightbox-content">
+      <img class="lightbox-image" src="" alt="">
+      <figcaption class="lightbox-caption"></figcaption>
+    </figure>
+
+    <button class="lightbox-next" aria-label="Next photograph">
+      &#10095;
+    </button>
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer" id="contact">
+    <h2>Wanderlust<strong class="period">.</strong></h2>
+    <p>Celebrating the beauty of our world, one photograph at a time.</p>
+    <p class="copyright">&copy; 2026 Wanderlust. All rights reserved.</p>
+  </footer>
+
+
+  
+  <script src="gallery.js"></script>
+</body>
+</html>
